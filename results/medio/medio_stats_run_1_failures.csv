@@ -1,0 +1,6 @@
+Method,Name,Error,Occurrences
+GET,GET /vets List,HTTPError('405 Client Error: Method Not Allowed for url: GET /vets List'),2476
+GET,GET /owners/[id],HTTPError('405 Client Error: Method Not Allowed for url: GET /owners/[id]'),3616
+GET,GET /owners List,HTTPError('405 Client Error: Method Not Allowed for url: GET /owners List'),4914
+GET,GET /owners List,"ChunkedEncodingError(ProtocolError(""Connection broken: InvalidChunkLength(got length b'', 0 bytes read)"", InvalidChunkLength(got length b'', 0 bytes read)))",1
+POST,POST /owners,HTTPError('503 Server Error: Service Unavailable for url: POST /owners'),1177

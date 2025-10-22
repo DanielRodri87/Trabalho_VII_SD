@@ -1,0 +1,4 @@
+Cenário,Usuários,Média Latência (ms),Máxima Latência (ms),Requisições/s,Erros (%)
+Leve,50,19.74,1463.74,24.76,0.0
+Moderado,100,50.2,10082.75,48.75,53.9923
+Pico,200,81.81,10174.99,96.09,68.8738

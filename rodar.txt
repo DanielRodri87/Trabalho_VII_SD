@@ -2,6 +2,9 @@
 docker-compose -f docker-compose.yml up -d
 docker ps
 
+chmod +x run_all_scenarios.sh
+./run_all_scenarios.sh
+
 curl -X POST http://localhost:8080/api/customer/owners \
   -H "Content-Type: application/json" \
   -d '{
@@ -32,6 +35,8 @@ curl -X POST http://localhost:8080/api/customer/owners \
     "city": "Picos",
     "telephone": "88999887"
   }'
+
+
 
 http://localhost:8080/api/customer/owners
 http://localhost:8080/api/vet/vets

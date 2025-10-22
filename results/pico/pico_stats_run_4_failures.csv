@@ -1,0 +1,5 @@
+Method,Name,Error,Occurrences
+GET,GET /vets List,HTTPError('405 Client Error: Method Not Allowed for url: GET /vets List'),3876
+GET,GET /owners/[id],HTTPError('405 Client Error: Method Not Allowed for url: GET /owners/[id]'),5687
+GET,GET /owners List,HTTPError('405 Client Error: Method Not Allowed for url: GET /owners List'),7584
+POST,POST /owners,HTTPError('503 Server Error: Service Unavailable for url: POST /owners'),1956
