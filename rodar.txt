@@ -1,0 +1,38 @@
+./mvnw clean install -DskipTests
+docker-compose -f docker-compose.yml up -d
+docker ps
+
+curl -X POST http://localhost:8080/api/customer/owners \
+  -H "Content-Type: application/json" \
+  -d '{
+    "firstName": "Daniel",
+    "lastName": "Rodrigues",
+    "address": "Avenida Sul 3101",
+    "city": "Picos",
+    "telephone": "999999999"
+  }'
+
+
+curl -X POST http://localhost:8080/api/customer/owners \
+  -H "Content-Type: application/json" \
+  -d '{
+    "firstName": "Rita",
+    "lastName": "Rodrigues",
+    "address": "UFPI 3101",
+    "city": "Picos",
+    "telephone": "99999887"
+  }'
+
+  curl -X POST http://localhost:8080/api/customer/owners \
+  -H "Content-Type: application/json" \
+  -d '{
+    "firstName": "Walison",
+    "lastName": "Weudes",
+    "address": "UFPI 201",
+    "city": "Picos",
+    "telephone": "88999887"
+  }'
+
+http://localhost:8080/api/customer/owners
+http://localhost:8080/api/vet/vets
+http://localhost:8080/api/visit/visits
