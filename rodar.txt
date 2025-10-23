@@ -1,6 +1,7 @@
 ./mvnw clean install -DskipTests
 docker-compose -f docker-compose.yml up -d
 docker ps
+docker-compose up -d api-gateway
 
 chmod +x run_all_scenarios.sh
 ./run_all_scenarios.sh
