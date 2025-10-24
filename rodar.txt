@@ -2,6 +2,10 @@
 docker-compose -f docker-compose.yml up -d
 docker ps
 docker-compose up -d api-gateway
+docker-compose up
+
+
+locust -f locustfile.py
 
 chmod +x run_all_scenarios.sh
 ./run_all_scenarios.sh

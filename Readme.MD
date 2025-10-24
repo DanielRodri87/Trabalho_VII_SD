@@ -19,6 +19,9 @@
 
 ---
 
+[![YouTube](https://img.shields.io/badge/YouTube-Demonstração-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/PGOzffyX7eQ?si=H35gxCF3-zcO3oPc)
+
+
 ## 📋 Visão Geral
 
 Este projeto implementa testes de carga automatizados para o **Spring PetClinic Microservices**, avaliando o comportamento do sistema sob diferentes cenários de stress. Utilizando **Locust** para simulação de usuários e **Docker** para isolamento de ambiente, garantimos resultados consistentes e reproduzíveis.
